@@ -1,3 +1,11 @@
+<style>
+details hr{border-color:var(--color-bg)}
+details>details { background-color:color-mix(in srgb, #252525 90%, white); }
+details>details>details,
+details>details>details[open]>summary {border-bottom:1px solid black}
+details>details>details[open]{border:1px solid black;border-top:0}
+</style>
+
 <details open><summary>{{title}}</summary>
 
 {{#each examples}}
