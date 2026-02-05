@@ -17,9 +17,9 @@
       "label":"Attributes",
       "template":{
         "text":{
-	  "type":"text",
-	  "label":"attribute"
-	}
+          "type":"text",
+          "label":"attribute"
+        }
       },
       "items":[
         {
