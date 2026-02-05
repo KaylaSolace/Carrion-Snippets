@@ -1,0 +1,49 @@
+<style>
+#pretentious,
+#pretentious .comp p,
+#pretentious details>summary
+{text-align:center}
+#pretentious .query{
+  margin: 40vh auto;
+  width: fit-content;
+  font-family: serif;
+  font-weight: bold;
+  text-align:left
+}
+#pretentious .query li{
+  list-style-type: '—';
+  text-align:left;
+  margin: 0 0 0 3em;
+  padding: 0 0 0 1em;
+}
+#pretentious .comp p{margin:0}
+#pretentious .drops{margin-left:40%}
+@media (max-width:600px){#pretentious .drops{margin:0}}
+#pretentious .drops details>summary{font-variant:all-small-caps;}
+#pretentious .drops details{text-align:justify}
+</style>
+
+<div id="pretentious">
+<div class="query">
+
+{{{query}}}
+
+<ul>{{#each attributes}}
+  <li>{{text}}</li>
+{{/each}}</ul>
+
+<div class="comp">
+
+{{{complication}}}
+</div>
+</div><!-- .query END -->
+<img class=inline src="{{image}}" /><hr>
+<div class="drops">
+{{#each dropdowns}}
+<details><summary>{{title}}</summary>
+
+{{{content}}}
+</details><hr>
+{{/each}}
+</div><!-- .drops END -->
+</div><!-- #pretentious END -->

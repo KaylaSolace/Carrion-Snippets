@@ -88,6 +88,14 @@
     "categories":["layout"]
   },
   {
+    "name": "\"What do you get\" v2",
+    "description": "Do you want to tease your characer's viewer with a small paragraph, followed by a semi-impressive inline that stands above sectioned-out dropdowns? Then this layout is for you!",
+    "metadata": "templates/pretentious-layout-v2/metadata.json",
+    "author": "degenerate bird",
+    "homepage": "https://carrion.chat/character/degenerate%20bird",
+    "categories":["layout"]
+  },
+  {
     "name": "Cinema profile layout",
     "description": "As opposed to most snippets here, this is almost a full profile for you to use!",
     "metadata": "templates/cinema-profile/metadata.json",

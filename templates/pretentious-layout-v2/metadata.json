@@ -1,0 +1,71 @@
+{
+  "template": "templates/pretentious-layout-v2/layout.hbs",
+  "options": {
+    "image": {
+      "type":"text",
+      "label":"Inline above dropdown",
+      "value": "https://static.f-list.net/images/charinline/d5/d9/d5d9e5daf8e9a3d611575ee603ed1c9cdff89873.png"
+    },
+
+    "query": {
+      "type":"text",
+      "label":"Initial question",
+      "value": "what do you get, when you have [your char's gender] who is"
+    },
+    "attributes":{
+      "type":"list",
+      "label":"Attributes",
+      "template":{
+        "text":{
+          "type":"text",
+          "label":"attribute"
+        }
+      },
+      "items":[
+        {
+          "text":"generic attribute no.1"
+        },
+        {
+          "text":"some kinda fancy attribute no.2"
+        },
+        {
+          "text":"fancy attribute no.3 that is UBER specific"
+        }
+      ]
+    },
+    "complication": {
+      "type":"textarea",
+      "label":"3-line complication",
+      "value":"write a three line complication\n\nthat is some manner completely flips the previous traits\n\nand gives a completely different implication"
+    },
+
+    "dropdowns":{
+      "type":"list",
+      "label":"Dropdown sections",
+      "template":{
+        "title":{
+          "type":"text",
+          "label":"Dropdown title"
+        },
+        "content":{
+          "type":"textarea",
+          "label":"Dropdown content"
+        }
+      },
+      "items":[
+        {
+          "title":"Diary",
+          "content":"And in here you can do whatever; write whatever texts you want, use whatever headings - this is just placeholder stuff you can play around with later on your own in the Carrion live editor and whatnot.\n\nThough the entire fun markdown or custom HTML you type in this textbox might work here, I'd suggest double-checking how it appears in Carrion itself with its preview feature. (and anyways, you should at most copy the structure, and finetune it in your profile for best results)"
+        },
+        {
+          "title":"phonebook",
+          "content":"> {color:yellow}**Character name**{/color}\n>\n> <sup>Nickname/title</sup>\n> <hr>\n> \"Expansive character description, written from the perspective of the profile's character\""
+        },
+        {
+          "title":"Calendar",
+          "content":"> **Big event no.1**<br>\n> A description of the event, that is really just a setup of some kind\n\n> **Big event no.2**<br>\n> A description of a different event/setup"
+        }
+      ]
+    }
+  }
+}
