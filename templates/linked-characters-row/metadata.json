@@ -1,0 +1,43 @@
+{
+  "template": "templates/linked-characters-row/list.hbs",
+  "options": {
+    "characters": {
+      "type": "list",
+      "label": "Depicted characters",
+      "template": {
+        "icon": {
+          "type": "text",
+          "label": "Character icon",
+          "value": ""
+        },
+        "username": {
+          "type": "text",
+          "label": "Carrion username",
+          "value": ""
+        },
+        "title": {
+          "type": "text",
+          "label": "Display name/title",
+          "value": ""
+        }
+      },
+      "items": [
+        {
+          "icon": "https://static.f-list.net/images/charimage/36548873.png",
+          "username": "degenerate bird",
+          "title": "My main hub"
+        },
+        {
+          "icon": "https://static.f-list.net/images/charimage/43615643.png",
+          "username": "Stemstress",
+          "title": "Stem"
+        },
+        {
+          "icon": "https://static.f-list.net/images/charimage/43615750.png",
+          "username": "lava loaf",
+          "title": "Loaf"
+        }
+      ]
+    }
+  }
+}
