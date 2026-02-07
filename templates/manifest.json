@@ -147,5 +147,13 @@
     "author": "Simon Blackquill",
     "homepage": "https://carrion.chat/character/Simon Blackquill",
     "categories":["snippet","chat"]
+  },
+  {
+    "name": "Linked character sidebar",
+    "description": "Are you looking to display other characters you've made a la FList style? Then this snippet is for you!",
+    "metadata": "templates/linked-characters/metadata.json",
+    "author": "degenerate bird",
+    "homepage": "https://carrion.chat/character/degenerate%20bird",
+    "categories":["snippet"]
   }
 ]

@@ -1,0 +1,35 @@
+<style>
+#char-list{
+  position:absolute;left:1em;
+}
+#char-list a{
+  border:0;color:white;
+  border-radius:5px;
+  padding:0.5em
+}
+#char-list a:hover{
+  background:var(--color-surface);
+}
+#char-list .char{
+  display:flex;flex-direction:row;
+  align-items:center;
+  gap:1em;
+}
+#char-list .char img{
+  width:50px;height:50px;
+  object-fit:cover;
+  margin:0
+}
+</style>
+
+<div id="char-list">
+{{#each characters}}
+  <a class="char" href="https://carrion.chat/character/{{username}}/">
+    <img src={{icon}}>
+    <span>
+      {{#if title}}{{title}}
+      {{else}}{{username}}
+    {{/if}}</span>
+  </a>
+{{/each}}
+</div>
