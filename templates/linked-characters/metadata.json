@@ -1,6 +1,20 @@
 {
   "template": "templates/linked-characters/list.hbs",
   "options": {
+    "highlight":{
+      "type":"color",
+      "label":"Hover color",
+      "value":"#3a3a3a"
+    },
+    "layout": {
+      "type": "select",
+      "label": "Layout of characters",
+      "options":[
+        {"label":"Dynamic","value":"dynamic"},
+        {"label":"FList float","value":"float"},
+        {"label":"Centered row","value":"row"}
+      ]
+    },
     "characters": {
       "type": "list",
       "label": "Depicted characters",

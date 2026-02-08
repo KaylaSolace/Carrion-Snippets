@@ -149,17 +149,9 @@
     "categories":["snippet","chat"]
   },
   {
-    "name": "Linked character sidebar",
+    "name": "Linked characters",
     "description": "Are you looking to display other characters you've made a la FList style? Then this snippet is for you!",
     "metadata": "templates/linked-characters/metadata.json",
-    "author": "degenerate bird",
-    "homepage": "https://carrion.chat/character/degenerate%20bird",
-    "categories":["snippet"]
-  },
-  {
-    "name": "Linked character row",
-    "description": "Are you looking to display other characters you've made, but dislike absolutely-positioned sidebars? Then this snippet is for you!",
-    "metadata": "templates/linked-characters-row/metadata.json",
     "author": "degenerate bird",
     "homepage": "https://carrion.chat/character/degenerate%20bird",
     "categories":["snippet"]
