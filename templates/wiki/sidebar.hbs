@@ -6,11 +6,15 @@
   text-align:justify;
   text-indent:1.5rem;
 }
+#main h2{
+  display:flow-root;
+  border-bottom:1px solid var(--theme);
+}
 
 .wikiblock{
   display:flex;flex:1;
   flex-direction:column;
-  max-width:300px;width:100%
+  max-width:400px
 }
 .wikiblock.right {
   float:right;
@@ -20,6 +24,14 @@
   float:left;
   margin:0 2em 2em 0
 }
+@media (max-width:700px){
+.wikiblock,
+.wikiblock.right,
+.wikiblock.left {
+  float:none;
+  max-width:unset;
+  margin:0;
+}}
 .wikiblock blockquote {
   text-align:center;
   font-size:1.2rem;font-weight:bold;
@@ -34,10 +46,10 @@
 /* "sources" dropdown */
 .sources{display:inline-block;width:100%}
 details>summary {color:var(--theme)}
-details>summary:hover { color:color-mix(in srgb, var(--theme) 45%, white);}
+details>summary:hover {color:color-mix(in srgb, var(--theme) 45%, white)}
 details hr{border-color:var(--color-bg)}
 
-details>details { background-color:color-mix(in srgb, #252525 90%, white); }
+details>details { background-color:color-mix(in srgb, #252525 90%, white) }
 
 details>details>details,
 details>details>details[open]>summary {border-bottom:1px solid black}
