@@ -1,0 +1,92 @@
+<style>
+#vibegrid{
+  --gbg:{{container_bckg}};
+  --cbg:{{cell_bckg}};
+  display:grid;gap:var(--gap);
+  margin:auto;padding:calc(var(--gap) / 2);
+  background:var(--gbg)
+}
+.pair{display:flex;gap:var(--gap)}
+.pair:last-of-type>.cell:last-of-type{display:none}
+.cell{
+  background:var(--cbg);color:{{cell_color}};
+  font-size:10px;
+  width:100%;height:var(--dim);
+  padding:3em;border:5px solid var(--cbg)
+}
+#vibegrid,.cell{border-radius: calc(var(--gap) / 2)}
+.cell.img{
+  display:flex;
+  border:0
+}
+.cell>img{
+  height:100%;margin:auto;
+  object-fit:contain
+}
+.cell.txt{overflow-y:scroll}
+/* 3 columns */
+@media (min-width:1111px){
+  #vibegrid{
+    --gap:3rem;
+    --dim:calc((1000px - var(--gap)*3) / 3);
+    max-width:1000px;
+    grid-template-columns:repeat(3, 1fr);
+  }
+  .pair{
+    flex-direction:row;
+    grid-column:1/span 2;
+  }
+  .pair:nth-child(3n+2){
+    flex-direction:column;
+    grid-column:3;
+    grid-row:span 2;
+  }
+  .pair:nth-child(3n){
+    flex-direction:row-reverse
+  }
+  .pair:last-of-type{grid-row:span 1}
+}
+/* 2 columns */
+@media (min-width:721px) and (max-width:1110px) {
+  #vibegrid{
+    --gap:1.5rem;
+    --dim:calc((600px - var(--gap)*2) / 2);
+    max-width:600px;
+    grid-template-columns:repeat(2, 1fr);
+  }
+  .pair{
+    flex-direction:row;
+    grid-column:1/span 2
+  }
+  .pair:nth-child(2n){
+    flex-direction:row-reverse
+  }
+  .pair:last-of-type{display:none}
+}
+/* 1 column */
+@media (max-width:720px) {
+  #vibegrid{
+    --gap:0.5rem;
+    --dim:275px;
+    max-width:275px;
+    grid-template-columns:1fr;
+    padding:var(--gap)
+  }
+  .pair{flex-direction:column}
+}
+</style>
+
+<div id="vibegrid">
+{{#each cells}}
+<div class="pair">
+<div class="cell img">
+  <img src="{{image}}">
+</div><div class="cell txt">
+  
+  {{{text}}}
+</div>
+</div>
+{{/each}}
+</div>
+
+<p style="text-align:right">Heavily inspired by <a href="https://carrion.chat/character/Jiaoqiu/">Jiaoqiu</a></p>
