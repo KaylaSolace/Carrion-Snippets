@@ -22,11 +22,11 @@
       "template":{
         "image":{
           "type":"text",
-          "label":"Cell image (ONLY INSERT URL IF CELL CONTAINS NO TEXT)"
+          "label":"Cell image"
         },
         "text":{
           "type":"textarea",
-          "label":"Cell text (MAKE SURE THE IMAGE INPUT ABOVE IS EMPTY FOR THIS TO SHOW)"
+          "label":"Cell text"
         }
       },
       "items":[
