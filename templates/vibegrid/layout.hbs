@@ -2,6 +2,8 @@
 #vibegrid{
   --gbg:{{container_bckg}};
   --cbg:{{cell_bckg}};
+  --col:{{cell_color}};
+  --hcl:{{cell_titles}};
   display:grid;gap:var(--gap);
   margin:auto;padding:calc(var(--gap) / 2);
   background:var(--gbg)
@@ -9,7 +11,7 @@
 .pair{display:flex;gap:var(--gap)}
 .pair:last-of-type>.cell:last-of-type{display:none}
 .cell{
-  background:var(--cbg);color:{{cell_color}};
+  background:var(--cbg);color:var(--col);
   font-size:10px;
   width:100%;height:var(--dim);
   padding:3em;border:5px solid var(--cbg)
@@ -20,7 +22,15 @@
   height:100%;margin:auto;
   object-fit:contain
 }
-.cell.txt{overflow-y:scroll}
+.cell.txt{
+  overflow-y:scroll;
+  letter-spacing:0.05em;
+  line-height:1.75em;
+}
+.cell h1{
+  text-align:center;color:var(--hcl);
+  margin-top:0;padding:0.3em
+}
 /* 3 columns */
 @media (min-width:1111px){
   #vibegrid{
