@@ -96,6 +96,14 @@
     "categories":["layout"]
   },
   {
+    "name": "Visual novel",
+    "description": "Is your character from a visual novel? Do you want to show as though they are? Then this layout is for you!",
+    "metadata": "templates/visual-novel/metadata.json",
+    "author": "degenerate bird",
+    "homepage": "https://carrion.chat/character/degenerate%20bird",
+    "categories":["layout"]
+  },
+  {
     "name": "Cinema profile layout",
     "description": "As opposed to most snippets here, this is almost a full profile for you to use!",
     "metadata": "templates/cinema-profile/metadata.json",
