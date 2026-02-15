@@ -1,13 +1,18 @@
 <style>
 #concise-box{
+  --color:{{color_text}};
+  --colora:{{color_accent}};
+  --bg1:{{bg_color1}};
+  --bg2:{{bg_color2}};
+
   display:flex;flex-direction:column;gap:1em;
   width:550px;height:535px;
   font-family:'Courier New',monospace;font-size:14px;
   line-height: 1.5;
-  color:{{color.text}};
+  color:var(--color);
 
-  background: url('{{bg.img}}') center/cover, {{bg.color1}};
-  border: 4px solid {{color.accent}};
+  background: url('{{bg_img}}') center/cover, var(--bg1);
+  border: 4px solid var(--colora);
   margin:0 auto;padding: 2em;
   box-sizing:border-box
 }
@@ -15,15 +20,15 @@
 #concise-box p{margin:0}
 
 #concise-box .box{
-  border:2px solid {{color.accent}};
+  border:2px solid var(--colora);
 }
 #concise-box .box.dark{
   padding:0.5em;
-  background:rgba(from {{bg.color1}} r g b / 0.9)
+  background:rgba(from var(--bg1) r g b / 0.9)
 }
 #concise-box .box.light{
   padding:1em;
-  background:rgba(from {{bg.color2}} r g b / 0.9)
+  background:rgba(from var(--bg2) r g b / 0.9)
 }
 
 #concise-box .header,
@@ -31,7 +36,7 @@
 #concise-box .header>h2{
   margin:0;
   font-size:26px;
-  color: {{color.accent}};
+  color: var(--colora);
   letter-spacing: 3px;
 }
 
@@ -39,7 +44,7 @@
   display:flex;flex-wrap:wrap;gap:1em;
   justify-content:center;
 }
-#concise-box .info>strong{color:{{color.accent}} }
+#concise-box .info>strong{color:var(--colora)}
 
 #concise-box .bio{
   flex-grow:1;overflow-y:auto;

@@ -1,28 +1,28 @@
 {
   "template": "templates/concise-box-profile/layout.hbs",
   "options": {
-    "color.text":{
+    "color_text":{
       "type": "color",
       "label": "Text color",
       "value": "#fff"
     },
-    "color.accent":{
+    "color_accent":{
       "type": "color",
       "label": "Accent color",
       "value": "#bf4223"
     },
 
-    "bg.img": {
+    "bg_img": {
       "type": "text",
       "label": "Background image",
       "value": "https://file.garden/Z_fuvw8HS2YH3EVO/manyandone.png"
     },
-    "bg.color1":{
+    "bg_color1":{
       "type": "color",
       "label": "Background backup color",
       "value": "#000"
     },
-    "bg.color2":{
+    "bg_color2":{
       "type": "color",
       "label": "Background backup color 2",
       "value": "#2a2a2a"

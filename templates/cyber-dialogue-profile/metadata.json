@@ -1,49 +1,49 @@
 {
   "template": "templates/cyber-dialogue-profile/layout-src.hbs",
   "options": {
-    "color.bg.light":{
+    "color_bg_light":{
       "type": "color",
       "label": "Main background (light)",
       "value": "#2d1a24"
     },
-    "color.bg.dark":{
+    "color_bg_dark":{
       "type": "color",
       "label": "Main background (dark)",
       "value": "#0d0509"
     },
-    "color.accent":{
+    "color_accent":{
       "type": "color",
       "label": "Accent color (outline)",
       "value": "#c94f7c"
     },
 
-    "color.text":{
+    "color_text":{
       "type": "color",
       "label": "Text color fallback",
       "value": "#fff"
     },
-    "color.a":{
+    "color_a":{
       "type": "color",
       "label": "Text color no.1",
       "value": "#c94f7c"
     },
-    "color.b":{
+    "color_b":{
       "type": "color",
       "label": "Text color no.2",
       "value": "#b8e6d4"
     },
 
-    "header.title": {
+    "header_title": {
       "type": "text",
       "label": "Character title",
       "value": "example character"
     },
-    "header.name": {
+    "header_name": {
       "type": "text",
       "label": "Character name",
       "value": "CHARACTERUS EXAMPLUS"
     },
-    "header.info": {
+    "header_info": {
       "type":"list",
       "label":"Characteristics",
       "template":{

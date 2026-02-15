@@ -7,14 +7,14 @@
       "value": "https://i.postimg.cc/QxNwCbMy/olga-thelavart-HZm2XR0whdw-unsplash.jpg"
     },
 
-    "adblerb.top": {
+    "adblerb_top": {
       "type":"text",
       "label":"Ad hook Top",
       "value": "Are you looking to solve a problem that doesn't exist?"
     },
-    "adblerb.bot": {
+    "adblerb_bot": {
       "type":"text",
-      "label":"Ad hook Top",
+      "label":"Ad hook bottom",
       "value": "Introducing: Useless Product!"
     },
 
@@ -24,15 +24,15 @@
       "value": "https://static.f-list.net/images/charinline/ed/13/ed132e0a4466632c4aff46947bab4ebd32ced5ad.png"
     },
 
-    "content.main": {
+    "content_main": {
       "type":"textarea",
       "label":"Main advert content",
       "value":"Etiam iaculis orci et felis consequat, eget vehicula ante sodales. Maecenas non nibh sit amet odio pulvinar dignissim vel ut est. Morbi ullamcorper, dui eu venenatis feugiat, enim justo accumsan elit, quis venenatis nibh mi fringilla libero. Vestibulum porta, nibh eget auctor accumsan, nisi libero dignissim neque, ut pharetra velit arcu sit amet ipsum. Cras sit amet massa nec nunc.\n\nProin consectetur quis diam facilisis rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ornare risus cursus justo consectetur, sit amet posuere nunc euismod. Aliquam.\n\nPellentesque eget congue nunc, vehicula congue justo. Donec elit neque, venenatis et cursus et, imperdiet vel ligula. Quisque laoreet ut tellus vitae iaculis. Maecenas venenatis nulla vitae ex vulputate cursus id ac orci. Vestibulum eu ultrices quam. Vestibulum libero metus, pretium sit amet rhoncus eu, pulvinar vel eros. Ut fermentum."
     },
-    "content.warn": {
+    "content_warn": {
       "type":"textarea",
       "label":"Disclaimer content",
-      "value":"### Disclaimer title\n\nSo I was rather lazy, and just put the basic auto-generated Lorem Ipsum in the main content. Sue me if you want."
+      "value":"### Disclaimer title\n\nSo I was rather lazy, and just put the basic auto-generated Lorem Ipsum in the main content. Sue me if you want.\n\nIf your \"product\" creator/seller has a logo, you can also place it down under this box (in HTML)."
     }
   }
 }

@@ -2,9 +2,12 @@
 #zine-ad {
   background-image: url({{pattern}});
   padding:1rem;
+  max-width:1000px;margin:auto;
 
   display:flex;flex-direction:column
 }
+
+#zine-ad img.inline{max-height:800px;object-fit: contain}
 
 #zine-ad,
 #zine-ad p{
@@ -37,19 +40,19 @@
 
 <div id="zine-ad">
 
-<h1>{{{adblerb.top}}}</h1>
-<img src="{{image}}" />
-<h1>{{{adblerb.bot}}}</h1>
+<h1>{{adblerb_top}}</h1>
+<img class="inline" src="{{image}}" />
+<h1>{{adblerb_bot}}</h1>
 
 <div class="blerb">
 <div class="text">
 
-{{{content.main}}}
+{{{content_main}}}
 
 </div>
 <div class="disc"><div class="box">
 
-{{{content.warn}}}
+{{{content_warn}}}
 
 </div></div>
 

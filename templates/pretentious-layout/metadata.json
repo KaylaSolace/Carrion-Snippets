@@ -10,44 +10,44 @@
     "query": {
       "type":"text",
       "label":"Initial question",
-      "value": "what do you get, when you have a man who is"
+      "value": "what do you get, when you have [your char's gender] who is"
     },
     "attributes":{
       "type":"list",
       "label":"Attributes",
       "template":{
         "text":{
-	  "type":"text",
-	  "label":"attribute"
-	}
+          "type":"text",
+          "label":"attribute"
+        }
       },
       "items":[
         {
-          "text":"impeccably dressed no matter the occasion"
+          "text":"generic attribute no.1"
         },
         {
-          "text":"called \"daddy\" by everyone's mother and daughter"
+          "text":"some kinda fancy attribute no.2"
         },
         {
-          "text":"in pursuit of getting a demon girl harem for himself"
+          "text":"fancy attribute no.3 that is UBER specific"
         }
       ]
     },
     "complication": {
       "type":"textarea",
       "label":"3-line complication",
-      "value":"and toss in a three-bodied, chaos-loving guardian beast in his path\n\nwhose unpredictability is as vast as its hunger for destruction\n\narmed with a little e x t r a that makes them \"unfit for sex\"?"
+      "value":"write a three line complication\n\nthat is some manner completely flips the previous traits\n\nand gives a completely different implication"
     },
 
-    "dropdown.title":{
+    "dropdown_title":{
       "type":"text",
       "label":"Dropdown title",
-      "value": "want to leave your humanity behind?"
+      "value": "teasing line here"
     },
-    "dropdown.content":{
+    "dropdown_content":{
       "type":"textarea",
       "label":"Dropdown content",
-      "value":"And on this side you can do whatever; write whatever texts you want, use whatever headings - this is just placeholder stuff you can play around with later on your own in the Carrion live editor and whatnot.\n\nSadly, the fun markdown or custom HTML will not work in this textbox; it's cleaned before being inserted. But in Carrion, even multilines like these will be properly depicted in separate lines unlike how they are in the preview."
+      "value":"And in here you can do whatever; write whatever texts you want, use whatever headings - this is just placeholder stuff you can play around with later on your own in the Carrion live editor and whatnot.\n\nThough the entire fun markdown or custom HTML you type in this textbox might work here, I'd suggest double-checking how it appears in Carrion itself with its preview feature. (and anyways, you should at most copy the structure, and finetune it in your profile for best results)"
     }
   }
 }

@@ -1,44 +1,44 @@
 {
   "template": "templates/flowchart-profile/layout.hbs",
   "options": {
-    "color.text":{
+    "color_text":{
       "type": "color",
       "label": "Text color",
       "value": "#fff"
     },
-    "color.subdued":{
+    "color_subdued":{
       "type": "color",
       "label": "Text color (subdued)",
       "value": "#888"
     },
-    "color.accent":{
+    "color_accent":{
       "type": "color",
       "label": "Accent color",
       "value": "#bf4223"
     },
 
-    "bg.color1":{
+    "bg_color1":{
       "type": "color",
       "label": "Background color 1",
       "value": "#141414"
     },
-    "bg.color2":{
+    "bg_color2":{
       "type": "color",
       "label": "Background color 2",
       "value": "#950C09"
     },
 
-    "header.name": {
+    "header_name": {
       "type": "text",
       "label": "Character name",
       "value": "CHARACTERUS EXAMPLUS"
     },
-    "header.title": {
+    "header_title": {
       "type": "text",
       "label": "Character title",
       "value": "example character"
     },
-    "header.quote": {
+    "header_quote": {
       "type": "text",
       "label": "Header quote",
       "value": "\"The best quotes are always stolen from someone else.\""
@@ -95,28 +95,28 @@
       ]
     },
 
-    "footer.line": {
+    "footer_line": {
       "type": "text",
       "label": "Footer quote",
       "value": "MOTTO OR CLOSING LINE"
     },
-    "footer.credit": {
+    "footer_credit": {
       "type": "text",
       "label": "Footer Credit",
       "value": "translation or subtext"
     },
 
-    "chart.start": {
+    "chart_start": {
       "type": "text",
       "label": "Flowchart step 1",
       "value": "Inciting incident"
     },
-    "chart.cont": {
+    "chart_cont": {
       "type": "text",
       "label": "Flowchart step 2",
       "value": "action"
     },
-    "chart.choice": {
+    "chart_choice": {
       "type": "list",
       "label": "Flowchart step(s) 3",
       "template":{
@@ -134,7 +134,7 @@
         }
       ]
     },
-    "chart.end": {
+    "chart_end": {
       "type": "text",
       "label": "Flowchart step 4",
       "value": "The same outcome, no matter the choice"

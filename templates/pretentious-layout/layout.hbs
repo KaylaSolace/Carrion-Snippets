@@ -12,27 +12,35 @@
   margin: 0 0 0 3em;
   padding: 0 0 0 1em;
 }
-#pretentious .comp p{text-align:center;margin:0}
+#pretentious .comp p{margin:0}
 
-#pretentious~details>summary{text-align:center}
+#pretentious .inline{margin-bottom:-1em}
+
+#pretentious,
+#pretentious .comp p,
+#pretentious>details>summary{text-align:center}
+#pretentious>details{text-align:justify}
 </style>
 
 <div id="pretentious">
-
 <div class="query">
 
 {{{query}}}
 
 <ul>{{#each attributes}}
-  <li>{{{text}}}</li>
+  <li>{{text}}</li>
 {{/each}}</ul>
 
-<div class="comp">{{{complication}}}</div>
-</div>
+<div class="comp">
 
-<img src="{{image}}" />
+{{{complication}}}
 </div>
-<details><summary>{{{dropdown.title}}}</summary>
+</div><!-- .query END -->
 
-{{{dropdown.content}}}
+<img class="inline" src="{{image}}" />
+
+<details><summary>{{dropdown_title}}</summary>
+
+{{{dropdown_content}}}
 </details>
+</div><!-- #pretentious END -->

@@ -22,9 +22,9 @@
       "label":"Wiki attributes",
       "template":{
         "label":{
-	  "type":"text",
-	  "label":"Property name"
-	},
+          "type":"text",
+          "label":"Property name"
+        },
         "value":{
           "type":"text",
           "label":"Value"
@@ -53,7 +53,31 @@
     "content":{
       "type":"textarea",
       "label":"Left area content",
-      "value":"And on this side you can do whatever; write whatever texts you want, use whatever headings - this is just placeholder stuff you can play around with later on your own in the Carrion live editor and whatnot."
+      "value": "Write a short summary over here about your character; do it in very general terms. Describe perhaps the most importants bits and bobs about them - species, job positions, direct familial relationships. You've read Wikipedia articles; I think you know how they're structured, more or less.\n\n## Appearance\n\nThough the inline image on the right should satisfy most, I doubt it is capable of describing everything about your character.\n\nBe as descriptive as possible; you know you want to show off your adjective vocabulary to whoever visits your page.\n\n## History\n\nHere you can delve in a bit deeper on your character's (public) history. Don't go into excruciating detail here though; a paragraph of 100 words should be more than enough for a single event in their life.\n\nAdditionally, I doubt anyone will care if you have more than 5 formative events described, because everything else, possibly written in more detailed prose can be displayed within..."
+    },
+    "sources":{
+      "type":"list",
+      "label":"Source dropdowns",
+      "template":{
+        "title":{
+          "type":"text",
+          "label":"Title"
+        },
+        "content":{
+          "type":"textarea",
+          "label":"The source text"
+        }
+      },
+      "items":[
+        {
+          "title":"Bestiary entry",
+          "content":"Here you can expand on your character's race's or species specificities and whatnot. *Really* go into those details on how their eyes glow, what makes their wings allow them to fly, or how their cum is able to impregnate any living being, no matter if they are fertile or not."
+        },
+        {
+          "title":"Diary",
+          "content":"Or perhaps you'd like to write out a diary with numerous entries instead? Well, that is going to need a bit more knowledge in HTML (mainly to add more nested dropdowns), but I'm certain you'll be able to do it!"
+        }
+      ]
     }
   }
 }

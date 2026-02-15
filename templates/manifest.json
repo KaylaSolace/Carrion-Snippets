@@ -53,7 +53,7 @@
     "metadata": "templates/detailed-character-card/metadata.json",
     "author": "Mony",
     "homepage": "https://carrion.chat/character/Mony/",
-    "categories":["snippet"]
+    "categories":["snippet","layout"]
   },
   {
     "name": "Roleplay samples",
@@ -96,6 +96,14 @@
     "categories":["layout"]
   },
   {
+    "name": "Vibe pseudo-grid",
+    "description": "You know those vibe grids? Where there are images and text mixed in a pattern with each other? If you'd like to style your profile in a similar way, then this layout is for you!",
+    "metadata": "templates/vibegrid/metadata.json",
+    "author": "degenerate bird",
+    "homepage": "https://carrion.chat/character/degenerate%20bird",
+    "categories":["layout"]
+  },
+  {
     "name": "Visual novel",
     "description": "Is your character from a visual novel? Do you want to show as though they are? Then this layout is for you!",
     "metadata": "templates/visual-novel/metadata.json",
@@ -124,21 +132,24 @@
     "description": "Are you a minimalist at heart? Or do you want to focus a visitor's attention to one place? Then use this simple box.",
     "metadata": "templates/concise-box-profile/metadata.json",
     "author": "Spierce",
-    "homepage": "https://carrion.chat/character/Spierce"
+    "homepage": "https://carrion.chat/character/Spierce",
+    "categories":["layout"]
   },
   {
     "name": "Flowchart layout",
     "description": "If all relationships with your character follow a predictable path: - this layout might be your best bet",
     "metadata": "templates/flowchart-profile/metadata.json",
     "author": "Spierce",
-    "homepage": "https://carrion.chat/character/Spierce"
+    "homepage": "https://carrion.chat/character/Spierce",
+    "categories":["layout"]
   },
   {
     "name": "Cyber dialogue layout",
     "description": "If you like cyberpunk themes, as well as write 2 other characters talking about yours - use this layout",
     "metadata": "templates/cyber-dialogue-profile/metadata.json",
     "author": "Spierce",
-    "homepage": "https://carrion.chat/character/Spierce"
+    "homepage": "https://carrion.chat/character/Spierce",
+    "categories":["layout"]
   },
   {
     "name": "Comic Sans layout",

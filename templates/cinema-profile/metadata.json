@@ -2,38 +2,38 @@
   "template":"templates/cinema-profile/layout.hbs",
 
   "options": {
-    "img-left":{
+    "img_left":{
       "type":"text",
       "label":"Left-side image",
       "value":"https://files.catbox.moe/h8e0fa.png"
     },
-    "img-right":{
+    "img_right":{
       "type":"text",
       "label":"Right-side image",
       "value":"https://files.catbox.moe/h8e0fa.png"
     },
-    "char.name":{
+    "char_name":{
       "type":"text",
       "label":"Character name",
       "value":"Characterus Examplus"
     },
-    "char.title":{
+    "char_title":{
       "type":"text",
       "label":"Character title",
       "value":"The example character"
     },
-    "char.quote":{
+    "char_quote":{
       "type":"textarea",
       "label":"Character quote",
       "value":"The best quotes are always stolen from someone else"
     },
 
-    "section1.title":{
+    "section1_title":{
       "type":"text",
       "label":"1st column title",
       "value":"TITLE"
     },
-    "section1.content":{
+    "section1_content":{
       "type":"list",
       "label":"1st column content",
       "template":{
@@ -49,34 +49,34 @@
       ]
     },
 
-    "section2.title":{
+    "section2_title":{
       "type":"text",
       "label":"2nd column title",
       "value":"TITLE TITLE"
     },
-    "section2.content":{
+    "section2_content":{
       "type":"textarea",
       "label":"2nd column content",
       "value":"Lorem ipsum dolor sit amet, executor something something are the first few words that almost any web developer who has made templates probably know by heart."
     },
 
-    "section3.title":{
+    "section3_title":{
       "type":"text",
       "label":"3rd column title",
       "value":"TITLE TITLE"
     },
-    "section3.content":{
+    "section3_content":{
       "type":"textarea",
       "label":"3rd column content",
       "value":"I bet the text's writer did not expect his creation to be used as nothing more than placeholder content for websites that do not even care about what he said."
     },
 
-    "section4.title":{
+    "section4_title":{
       "type":"text",
       "label":"4th column title",
       "value":"TITLE"
     },
-    "section4.content":{
+    "section4_content":{
       "type":"list",
       "label":"4th column content",
       "template":{
