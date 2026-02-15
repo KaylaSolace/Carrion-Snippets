@@ -4,11 +4,11 @@
   font-family: 'Courier New', monospace;
   font-size:16px;
 
-  --bg1:{{bg.color1}};
-  --bg2:{{bg.color2}};
-  --colm:{{color.text}};
-  --cols:{{color.subdued}};
-  --cola:{{color.accent}};
+  --bg1:{{bg_color1}};
+  --bg2:{{bg_color2}};
+  --colm:{{color_text}};
+  --cols:{{color_subdued}};
+  --cola:{{color_accent}};
 
   background: var(--bg1);
   border: 4px solid var(--cola); 
@@ -82,9 +82,9 @@
 
 <!-- header -->
 <div class="header">
-  <div class="title subdued">{{header.title}}</div>
-  <h2>{{header.name}}</h2>
-  <em>{{header.quote}}</em>
+  <div class="title subdued">{{header_title}}</div>
+  <h2>{{header_name}}</h2>
+  <em>{{{header_quote{}}</em>
 </div>
 
 <!-- basic info bar -->
@@ -128,15 +128,15 @@
 }
 </style>
 <div class="chart">
-<div class="box b1">{{chart.start}}</div>
+<div class="box b1">{{{chart_start}}}</div>
 <div style="color: #444; font-size: 30px;">→</div>
-<div class="box b2">{{chart.cont}}</div>
+<div class="box b2">{{{chart_cont}}}</div>
 <div style="color: #444; font-size: 30px;">→</div>
-<div class="b3">{{#each chart.choice}}
-  <div class="box">{{choice}}</div>
+<div class="b3">{{#each chart_choice}}
+  <div class="box">{{{choice}}}</div>
 {{/each}}</div>
 <div style="color: #444; font-size: 30px;">→</div>
-<div class="box b4">{{chart.end}}</div>
+<div class="box b4">{{{chart_end}}}</div>
 </div>
 
 
@@ -146,20 +146,20 @@
 <!-- main bio section -->
 <div class="bio">
 
-{{content}}
+{{{content}}}
 </div>
 
 <!-- secondary info section -->
 <div>{{#each sections}}
 <div class="section"><h4>{{title}}</h4>
 
-{{content}}
+{{{content}}}
 </div>
 {{/each}}</div>
 
 <div class="footer">
-  <p class="m">{{footer.line}}</p>
-  <p class="s">{{footer.credit}}</p>
+  <p class="m">{{footer_line}}</p>
+  <p class="s">{{footer_credit}}</p>
 </div>
 
 </div>

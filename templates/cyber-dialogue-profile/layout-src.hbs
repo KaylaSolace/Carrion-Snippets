@@ -1,12 +1,12 @@
 <link rel="stylesheet" src="https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css">
 <style>
 #cyber-dialogue{
-  --bg1:  {{color.bg.light}};
-  --bg2:  {{color.bg.dark}};
-  --colm: {{color.text}};
-  --colac:{{color.accent}};
-  --cola: {{color.a}};
-  --colb: {{color.b}};
+  --bg1:  {{color_bg_light}};
+  --bg2:  {{color_bg_dark}};
+  --colm: {{color_text}};
+  --colac:{{color_accent}};
+  --cola: {{color_a}};
+  --colb: {{color_b}};
   --border:3px solid var(--colac);
   --sorder:2px solid #3d2a34;
   width:750px;margin: 0 auto;
@@ -77,10 +77,10 @@
 <div id="cyber-dialogue">
 
 <div class="header">
-  <h3>{{header.title}}</h3>
-  <h2>{{header.name}}</h2>
+  <h3>{{{header_title}}}</h3>
+  <h2>{{header_name}}</h2>
   <div class="meta">
-  {{#each header.info}}<span>{{text}}</span>{{/each}}
+  {{#each header_info}}<span>{{{text}}}</span>{{/each}}
   </div>
 </div>
 
@@ -91,18 +91,18 @@
 <div class="dialogue">{{#each dialogue}}
   <div class="msg {{col}}">
     <span>{{speaker}}</span>
-    <p>{{msg}}</p>
+    <p>{{{msg}}}</p>
   </div>
 {{/each}}</div>
 
 <div class="bio">
 
-{{bio}}
+{{{bio}}}
 </div>
 
 <div class="footer">
-  <div class="quote">{{footer.line}}</div>
-  <div class="credit">{{footer.credit}}</div>
+  <div class="quote">{{footer_line}}</div>
+  <div class="credit">{{footer_credit}}</div>
 </div>
 
 </div>

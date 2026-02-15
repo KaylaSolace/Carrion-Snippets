@@ -34,7 +34,10 @@ table#main .gallery img {
 
 
 
-<p class="quote">{{quote}}</p>
+<div class="quote">
+
+{{{quote}}}
+</div>
 
 <hr/>
 
@@ -44,14 +47,13 @@ table#main .gallery img {
 </td>
 
 <td class="content">
-  <p class="title">{{{char.name}}}<br>{{{char.title}}}</p>
+  <div class="title">{{{char_name}}}
+  <br>{{{char_title}}}</div>
 
-<hr class="separator">
-  <div class="desc">
+<hr class="separator"><div class="desc">
 
-  {{{char.desc}}}
-  </div>
-<hr class="separator">
+  {{{char_desc}}}
+</div><hr class="separator">
 
 
 <div class="gallery">

@@ -1,58 +1,91 @@
 <style>
 #main {
-  display:flex;flex-direction:row-reverse;
-  gap: 2rem;
-  width: 100%;
-
   --theme:{{theme-color}};
 }
-
-#main .col {
-  display:flex;flex:1;
-  flex-direction:column;
-}
-#main .col img {
-  object-fit:contain;
-  height:100%;max-height:400px
-}
-
 #main p {
   text-align:justify;
   text-indent:1.5rem;
 }
+#main h2{
+  display:flow-root;
+  border-bottom:1px solid var(--theme);
+}
 
-#main blockquote {
+.wikiblock{
+  display:flex;flex:1;
+  flex-direction:column;
+  max-width:400px
+}
+.wikiblock.right {
+  float:right;
+  margin:0 0 2em 2em
+}
+.wikiblock.left {
+  float:left;
+  margin:0 2em 2em 0
+}
+@media (max-width:700px){
+.wikiblock,
+.wikiblock.right,
+.wikiblock.left {
+  float:none;
+  max-width:unset;
+  margin:0;
+}}
+.wikiblock blockquote {
   text-align:center;
   font-size:1.2rem;font-weight:bold;
   border-color:var(--theme)
 }
-#main .classcard td {width:100%}
+.wikiblock img {
+  object-fit:contain;
+  height:100%;max-height:400px
+}
+.wikiblock td {width:100%}
+
+/* "sources" dropdown */
+.sources{display:inline-block;width:100%}
+details>summary {color:var(--theme)}
+details>summary:hover {color:color-mix(in srgb, var(--theme) 45%, white)}
+details hr{border-color:var(--color-bg)}
+
+details>details { background-color:color-mix(in srgb, #252525 90%, white) }
+
+details>details>details,
+details>details>details[open]>summary {border-bottom:1px solid black}
+details>details>details[open]{border:1px solid black;border-top:0}
 </style>
 
 <div id="main">
-<div style="max-width:400px" class="col">
+<div class="wikiblock right">
+  <blockquote>{{quote}}</blockquote>
+  <img src="{{image}}"/>
 
-<blockquote>{{{quote}}}</blockquote>
+  <table><tbody>
+    {{#each attributes}}
+    <tr>
+      <th>{{label}}</th>
+      <td>{{{value}}}</td>
+    </tr>
+    {{/each}}
+  </tbody></table>
+</div><!-- .wikiblock.right END -->
 
-<img src="{{image}}" />
-
-<table class="classcard"><tbody>
-
-{{#each attributes}}
-<tr>
-  <th>{{{label}}}</th>
-  <td>{{{value}}}</td>
-</tr>
-{{/each}}
-
-</tbody></table>
-
-</div><!-- .col END -->
-
-<div class="col">
+<div>
 
 {{{content}}}
 
-</div><!-- .col END -->
+<details open class=sources><summary>Sources...</summary>
+
+{{#each sources}}
+<details><summary>{{title}}</summary>
+
+{{{content}}}
+</details>
+{{/each}}
+
+</details><!-- sources details END -->
+
+</div><!-- main content END -->
 </div><!-- #main END -->
 

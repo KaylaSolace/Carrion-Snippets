@@ -14,8 +14,13 @@
     },
 
     "quote":{
+      "type":"text",
+      "label":"Character Quote",
+      "value":"The best quotes are always stolen from someone else."
+    },
+    "dropdown_content":{
       "type":"textarea",
-      "label":"Character quote",
+      "label":"Character description",
       "value":"This is most likely your character's impressions of the character that is described within this card; whether they like him or hate him, what important life lessons they have learned from observing them, etc.\n\nAlternatively, this can also be an observation of their character of this current one - their impressions, etc."
     },
 

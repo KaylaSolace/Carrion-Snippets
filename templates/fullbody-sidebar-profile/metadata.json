@@ -11,17 +11,17 @@
       "label":"Inline / Main representation",
       "value": "https://files.catbox.moe/9bcym2.png"
     },
-    "char.name": {
+    "char_name": {
       "type":"text",
       "label":"Character name",
       "value": "Characterus Examplus"
     },
-    "char.title": {
+    "char_title": {
       "type":"text",
       "label":"Character title",
       "value": "The example character"
     },
-    "char.desc": {
+    "char_desc": {
       "type":"textarea",
       "label":"Character description",
       "value": "Lorem ipsum dolor sit amet... You know the gist."
@@ -55,6 +55,5 @@
         }
       ]
     }
-
   }
 }
