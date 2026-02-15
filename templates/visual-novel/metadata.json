@@ -19,12 +19,12 @@
     "char_cg_img": {
       "type":"text",
       "label":"Character sprite URL",
-      "value": "https://static.wikitide.net/otdevilwiki/c/c3/Morg_flippant.png"
+      "value": "https://i.postimg.cc/SK5HJhWq/image.png"
     },
     "char_cg_margin": {
       "type":"text",
       "label":"character sprite offset (keep as a percentage please)",
-      "value": "50%"
+      "value": "15%"
     },
     "dialogue":{
       "type":"list",
