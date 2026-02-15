@@ -73,6 +73,16 @@
           "text":"Sed enim nisl, consequat ac hendrerit ac, vulputate ac enim. Ut eu nisl ut ex pharetra vestibulum rutrum ac diam. Aenean bibendum lectus ex, sed lacinia massa bibendum nec."
         }
       ]
+    },
+    "final_speaker":{
+      "type":"text",
+      "label":"The final speaker",
+      "value":"girl a"
+    },
+    "final_message":{
+      "type":"textarea",
+      "label":"The final message",
+      "value":"The final message the \"player\" sees before opening the history log by pressing the button down below"
     }
   }
 }
