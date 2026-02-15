@@ -96,6 +96,14 @@
     "categories":["layout"]
   },
   {
+    "name": "Vibe pseudo-grid",
+    "description": "You know those vibe grids? Where there are images and text mixed in a pattern with each other? If you'd like to style your profile in a similar way, then this layout is for you!",
+    "metadata": "templates/vibegrid/metadata.json",
+    "author": "degenerate bird",
+    "homepage": "https://carrion.chat/character/degenerate%20bird",
+    "categories":["layout"]
+  },
+  {
     "name": "Cinema profile layout",
     "description": "As opposed to most snippets here, this is almost a full profile for you to use!",
     "metadata": "templates/cinema-profile/metadata.json",

@@ -1,0 +1,61 @@
+{
+  "template": "templates/vibegrid/layout.hbs",
+  "options": {
+    "container_bckg": {
+      "type":"text",
+      "label":"Container background (any css property works)",
+      "value": "#f0b4b3"
+    },
+    "cell_bckg": {
+      "type":"text",
+      "label":"Cell background (any css property works)",
+      "value": "#fff"
+    },
+    "cell_color": {
+      "type":"color",
+      "label":"Cell text color",
+      "value": "#000"
+    },
+    "cell_titles": {
+      "type":"color",
+      "label":"Cell title color",
+      "value": "#703C3C"
+    },
+    "cells":{
+      "type":"list",
+      "label":"Grid contents",
+      "template":{
+        "image":{
+          "type":"text",
+          "label":"Cell image"
+        },
+        "text":{
+          "type":"textarea",
+          "label":"Cell text"
+        }
+      },
+      "items":[
+        {
+          "image":"https://i.postimg.cc/tg0mrdXf/1.png",
+          "text":"# Lorem\n\nAenean accumsan fermentum viverra. Etiam et ligula nec nisi sodales interdum nec sit amet arcu. Aenean ultrices, lorem in auctor condimentum, nulla dui ultricies leo, vitae convallis ligula magna vel urna. Praesent tincidunt, leo nec mollis rutrum, ligula sem vehicula arcu, vel hendrerit libero neque vitae turpis. Fusce nec posuere velit, ac faucibus diam. Vivamus placerat convallis efficitur. Ut non quam in velit eleifend fringilla. Curabitur congue eros vel facilisis condimentum.\n\nNam fermentum dignissim dui, a maximus lectus mollis nec. Cras laoreet dapibus magna, et pulvinar lectus. Etiam a molestie ante. Nam dapibus mollis vestibulum. Curabitur in scelerisque sem. Etiam fringilla pretium diam. Integer neque augue, tincidunt vel lacinia vitae, dignissim ac ipsum."
+        },
+        {
+          "image":"https://i.postimg.cc/6Qs1HV9L/2.png",
+          "text":"# Ipsum\n\nQuisque ultricies, metus a sollicitudin consectetur, felis magna consequat tellus, ac consequat tortor lorem ac eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec scelerisque imperdiet lectus id maximus. Proin ante lacus, auctor at dictum pellentesque, sollicitudin gravida mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean tincidunt magna sed viverra sagittis. Proin pretium ligula ipsum, ac varius arcu vestibulum nec. Sed eget neque lorem. Aliquam erat volutpat. Nulla facilisi. Morbi molestie mi metus, sed consequat arcu luctus non. Vivamus risus metus, congue vel porta et, vulputate nec massa. Sed enim nisl, consequat ac hendrerit ac, vulputate ac enim. Ut eu nisl ut ex pharetra vestibulum rutrum ac diam. Aenean bibendum lectus ex, sed lacinia massa bibendum nec."
+        },
+        {
+          "image":"https://i.postimg.cc/XvMD2KVP/3.png",
+          "text":"# Dolor\n\nPhasellus libero dui, euismod vel nunc eget, luctus elementum dui. Donec blandit velit eget pulvinar scelerisque. Phasellus vitae ligula purus. Suspendisse vitae lorem lobortis, gravida sapien nec, hendrerit lacus. Phasellus pharetra dui sit amet ex tristique, vitae luctus risus porttitor. Curabitur nec sapien diam. Mauris venenatis quis diam quis hendrerit.\n\nInteger luctus, neque ut scelerisque mollis, tortor nibh tempus quam, non congue nisl velit nec justo. Donec semper ligula nec turpis feugiat viverra. Nam eu efficitur eros, vel aliquet lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus arcu non eros accumsan luctus. Morbi et metus nec ex commodo iaculis. Donec id velit vel quam aliquet fringilla vel a ligula. Pellentesque consectetur nisi non tincidunt pharetra. Nulla leo mauris, euismod ac condimentum a, commodo in dui. Curabitur lorem sapien, gravida nec laoreet at, mollis mattis purus."
+        },
+        {
+          "image":"https://i.postimg.cc/9f3NxPWn/4.png",
+          "text":"# Sit amet\n\nIn euismod ligula sit amet eros blandit, quis aliquet arcu interdum. Vestibulum feugiat nunc enim, non posuere urna suscipit ultricies. Vivamus a ante libero. Sed lobortis eleifend feugiat. Praesent in volutpat risus. Vestibulum ac purus sapien. Nunc a tristique nulla, sed fringilla nisl. Phasellus sit amet nulla faucibus nisl commodo fermentum.\n\nProin magna nunc, convallis et tincidunt et, euismod in libero. Nullam et eleifend dui. Sed non bibendum mi. Proin maximus lorem quis tortor congue, ut mattis tellus porttitor. Curabitur egestas euismod nulla, imperdiet dictum dolor placerat eget. Integer quam dolor, fermentum non blandit et, luctus non erat. Duis tristique dictum erat nec ultricies. Nulla facilisi. Nulla vitae odio nunc. Integer condimentum convallis molestie. Duis et diam vel sapien sollicitudin dignissim sed quis magna. Proin tincidunt lectus ac nibh consequat, et euismod turpis commodo. "
+        },
+        {
+          "image":"https://i.postimg.cc/Gpkg6B2K/5.png",
+          "text":""
+        }
+      ]
+    }
+  }
+}
