@@ -4,6 +4,11 @@
   .background {
     --background-image: url({{src}});
     --background-fallback: {{color}};
+    {{#if (eq repeat-value "repeat")}}
+      background-size:auto;
+      background-repeat:repeat;
+      {{repeat-value}}
+    {{/if}}
   }
 </style>
 <div class="background"></div>

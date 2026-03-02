@@ -1,14 +1,22 @@
 {
   "template": "templates/profile_background/background.hbs",
   "options": {
-    "color": {  
-      "type": "color", 
+    "color": {
+      "type": "color",
       "label": "Fallback color"
     },
-    "src": {  
+    "src": {
       "type": "text",
       "label": "Image URL",
       "value": "https://file.garden/aTNlS0deYkPxCXcx/css/gallery/1.jpeg"
+    },
+    "repeat-value":{
+      "type":"select",
+      "label":"Image repetition",
+      "options":[
+        {"label":"No repetition","value":"no-repeat"},
+        {"label":"Tiling","value":"repeat"}
+      ]
     }
   }
 }
