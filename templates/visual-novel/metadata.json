@@ -1,0 +1,88 @@
+{
+  "template": "templates/visual-novel/layout.hbs",
+  "options": {
+    "window_title":{
+      "type":"text",
+      "label":"Visual novel name (the thing that shows as window title)",
+      "value":"My Visual Novel (RenPy)"
+    },
+    "window_bckg_col": {
+      "type":"color",
+      "label":"Container background color",
+      "value": "#000"
+    },
+    "window_bckg_img": {
+      "type":"text",
+      "label":"Container background background art",
+      "value": "https://i.postimg.cc/hvrbm4W0/cg.png"
+    },
+    "char_cg_img": {
+      "type":"text",
+      "label":"Character sprite URL",
+      "value": "https://i.postimg.cc/SK5HJhWq/image.png"
+    },
+    "char_cg_margin": {
+      "type":"text",
+      "label":"character sprite offset (keep as a percentage please)",
+      "value": "15%"
+    },
+    "dialogue":{
+      "type":"list",
+      "label":"VN dialogue history",
+      "template":{
+        "speaker":{
+          "type":"text",
+          "label":"Character name"
+        },
+        "text":{
+          "type":"textarea",
+          "label":"Cell text"
+        }
+      },
+      "items":[
+        {
+          "speaker":"girl a",
+          "text":"Accumsan fermentum viverra. Etiam et ligula nec nisi sodales interdum nec sit amet arcu. Aenean ultrices, lorem in auctor condimentum, nulla dui ultricies leo, vitae convallis ligula magna vel urna."
+        },
+        {
+          "speaker":"you",
+          "text":"Quisque ultricies, metus a sollicitudin consectetur, felis magna consequat tellus, ac consequat tortor lorem ac eros."
+        },
+        {
+          "speaker":"boy a",
+          "text":"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec scelerisque imperdiet lectus id maximus. Proin ante lacus, auctor at dictum pellentesque, sollicitudin gravida mauris."
+        },
+        {
+          "speaker":"boy a",
+          "text":"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean tincidunt magna sed viverra sagittis. Proin pretium ligula ipsum, ac varius arcu vestibulum nec. Sed eget neque lorem."
+        },
+        {
+          "speaker":"you",
+          "text":"Aliquam erat volutpat."
+        },
+        {
+          "speaker":"boy a",
+          "text":"Nulla facilisi."
+        },
+        {
+          "speaker":"boy a",
+          "text":"Morbi molestie mi metus, sed consequat arcu luctus non. Vivamus risus metus, congue vel porta et, vulputate nec massa."
+        },
+        {
+          "speaker":"you",
+          "text":"Sed enim nisl, consequat ac hendrerit ac, vulputate ac enim. Ut eu nisl ut ex pharetra vestibulum rutrum ac diam. Aenean bibendum lectus ex, sed lacinia massa bibendum nec."
+        }
+      ]
+    },
+    "final_speaker":{
+      "type":"text",
+      "label":"The final speaker",
+      "value":"girl a"
+    },
+    "final_message":{
+      "type":"textarea",
+      "label":"The final message",
+      "value":"The final message the \"player\" sees before opening the history log by pressing the button down below"
+    }
+  }
+}
