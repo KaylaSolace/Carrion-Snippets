@@ -1,0 +1,54 @@
+<style>
+#scrolltabs{
+  --border:medium solid white;
+  --height:{{tab_height}};
+  --space:{{tab_padding}};
+
+  padding:2rem 0;margin:2rem 0;
+  border-bottom:var(--border) 
+}
+#scrolltabs hr{border:0;border-top:var(--border);flex:1}
+#scrolltabs>.urls,
+#scrolltabs>.urls .a{
+  display:flex;gap:1rem;
+  justify-content:center;align-items:center;
+  padding-bottom:1rem;
+}
+#scrolltabs>.urls .a{padding:0}
+#scrolltabs>.urls a {
+  padding:0 0.5em;height:fit-content;
+  flex-shrink:0
+}
+#scrolltabs>.urls .vr {
+  width:0;margin:0;border:0;height:1.75em;
+  border-right:thin solid white;
+}
+#scrolltabs>.urls .vr:last-of-type{display:none}
+
+#scrolltabs>.content{
+  display:flex;flex-direction:row;gap:3em;
+  overflow:scroll;scrollbar-width:none;
+}
+#scrolltabs>.content>.tab{
+  width:100%;flex-shrink:0;
+  margin-top:calc(-1 * var(--space));padding-top:var(--space);
+  height:var(--height);overflow:scroll
+}
+</style>
+
+<div id="scrolltabs">
+<div class="urls"><hr><div class="a">
+{{#each tabsection}}
+  <a href="#{{title_href}}">{{title}}</a>
+  <hr class="vr">
+{{/each}}
+</div><hr></div>
+<div class="content">
+{{#each tabsection}}
+  <div id="{{title_href}}" class="tab">
+
+{{{content}}}
+  </div>
+{{/each}}
+</div>
+</div>
