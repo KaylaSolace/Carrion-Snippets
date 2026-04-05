@@ -1,0 +1,50 @@
+{
+  "template": "templates/paperdoll/doll.hbs",
+  "options": {
+    "images": {
+      "type": "list",
+      "label": "Images",
+      "template": {
+        "src": {
+          "type": "text",
+          "label": "Doll Image URL",
+          "value": ""
+        },
+        "txt_open": {
+          "type": "text",
+          "label": "Image top title",
+          "value": "Open next image"
+        },
+        "txt_close": {
+          "type": "text",
+          "label": "Image top title",
+          "value": "Open previous image"
+        }
+      },
+      "items": [
+        { "src":"https://i.postimg.cc/tg0mrdXf/1.png" },
+        { "src":"https://i.postimg.cc/6Qs1HV9L/2.png" },
+        { "src":"https://i.postimg.cc/XvMD2KVP/3.png" },
+        { "src":"https://i.postimg.cc/9f3NxPWn/4.png" },
+        { "src":"https://i.postimg.cc/Gpkg6B2K/5.png" }
+      ]
+    },
+    "txt_first": {
+      "type": "text",
+      "label": "The first image's accompanying text",
+      "value": "This is the first image!"
+    },
+    "txt_last": {
+      "type": "text",
+      "label": "The last image's accompanying text",
+      "value": "This is the last image!"
+    },
+    "size": {
+      "type": "number",
+      "label": "Paperdoll height (in pixels)",
+      "min": 0,
+      "value": 800,
+      "step": 10
+    }
+  }
+}

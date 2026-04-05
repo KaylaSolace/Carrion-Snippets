@@ -24,6 +24,14 @@
     "categories":["snippet","images"]
   },
   {
+    "name": "Paperdolls",
+    "description": "Do you have a variant image set of your character? Or simply several outfits your character wears? This snippet will let you cycle through them all!",
+    "metadata": "templates/paperdoll/metadata.json",
+    "author": "degenerate bird",
+    "homepage": "https://carrion.chat/character/degenerate%20bird",
+    "categories":["snippet","images"]
+  },
+  {
     "name": "Basic gallery",
     "description": "Have a lot of images of your char? Care more of function over form? Well, then this dropdown gallery is for you!",
     "metadata": "templates/basic_gallery/metadata.json",
