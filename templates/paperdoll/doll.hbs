@@ -1,0 +1,44 @@
+<style>
+.undress-paperdoll{
+--pd-h:{{size}}px;line-height:1;
+position:relative;width:100%;height:calc(var(--pd-h) + 6em)}
+.undress-paperdoll summary{text-align:center;margin:1em 0}
+details>summary::marker{content:none}
+.undress-paperdoll details {
+position:absolute;box-sizing:border-box;
+width:100%;padding:0;margin:0;
+display:flex;flex-direction:column;align-content:center;
+}
+.undress-paperdoll .doll {display:block;margin:0 auto;height:var(--pd-h)}
+
+/* show only the "current" paperdoll navigation */
+.undress-paperdoll details:has(details[open])>:not(details){display:none}
+.undress-paperdoll details[open]>summary .o {display:none}
+.undress-paperdoll details:not([open])>summary .c {display:none}
+
+/* Prevent the first doll from being hidden on accident */
+.undress-paperdoll>details>summary{pointer-events: none;}
+</style>
+
+<div class="undress-paperdoll">
+
+{{#each images}}
+<details {{#if @first}}open{{/if}}><summary>
+{{#if @first}}
+  {{../txt_first}}
+{{/if}}{{#unless @first}}
+  <span class=o>{{txt_open}}</span>
+  <span class=c>{{txt_close}}</span>
+{{/unless}}
+</summary><img src={{src}} class=doll>
+{{#if @last}}
+<summary>{{../txt_last}}</summary>
+{{/if}}
+{{/each}}
+
+<!--to neatly close all the dropdowns -->
+{{#each images}}
+</details>
+{{/each}}
+
+</div>
