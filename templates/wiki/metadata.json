@@ -9,12 +9,12 @@
     "quote": {
       "type":"text",
       "label":"Quote",
-      "value": "Oh... A customer?"
+      "value": "get CUBED"
     },
     "image": {
       "type":"text",
       "label":"Reference image",
-      "value": "https://static.f-list.net/images/charinline/ed/13/ed132e0a4466632c4aff46947bab4ebd32ced5ad.png"
+      "value": "https://i.postimg.cc/Gpkg6B2K/5.png"
     },
 
     "attributes":{
@@ -33,19 +33,19 @@
       "items":[
         {
           "label":"Name",
-          "value": "Loaf"
+          "value": "Qube"
         },
         {
           "label":"Race",
-          "value": "Fire elemental"
+          "value": "Polyhedron"
         },
         {
           "label":"Species",
-          "value": "Goo girl"
+          "value": "parallelepiped"
         },
         {
           "label":"Class",
-          "value": "Cook"
+          "value": "IMMATERIAL"
         }
       ]
     },
